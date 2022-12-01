@@ -6,11 +6,13 @@ body {
 }
 /* HEADER */
 header {
-  background-color: rgb(65, 106, 150);
+  /* background-color: #007788; */
+  background-image: linear-gradient(to top, #007788, #0099bb);
   text-align: center;
   display: block;
   max-width: 500px;
   margin: 20px;
+  box-shadow: 5px 5px 5px black;
 }
 header p,
 a {
@@ -44,6 +46,8 @@ main {
   margin: 20px;
   font-size: 1.1em;
   font-weight: 500;
+  border-left: solid 1px #bbbbbb;
+  border-right: solid 1px #bbbbbb;
 }
 main h1 {
   font-size: 2.5em;
@@ -62,22 +66,29 @@ main p {
   font-size: 1.2em;
 }
 main p span {
-  color: blueviolet;
+  color: #aa2072;
 }
 main ul span {
-  background-color: rgb(185, 180, 180);
+  background-color: #ddeeee;
+  border-radius: 5px;
+  border: solid 1px black;
 }
 main ul li {
-  margin: auto;
+  margin-left: 50px;
+  margin-right: 50px;
   padding: 0.4em;
   line-height: 1.2em;
   font-size: 1.2em;
 }
 main ol li {
-  margin: auto;
+  margin-left: 50px;
+  margin-right: 50px;
   padding: 0.4em;
   line-height: 1.2em;
   font-size: 1.2em;
+}
+ul li::marker {
+  padding-left: 10px;
 }
 
 /* TABELLE */
@@ -120,14 +131,14 @@ section h3 {
   text-align: center;
 }
 section div {
-  background-color: rgb(100, 100, 101);
+  background-color: #ddddde;
   text-align: left;
   display: block;
   max-width: 500px;
   margin: 20px;
 }
 section div a {
-  color: aqua;
+  color: #0099cc;
   font-weight: 500;
   text-decoration: underline;
   padding: 1em;
@@ -137,7 +148,8 @@ section div a {
 }
 /* FOOTER */
 footer {
-  background-color: rgb(14, 72, 134);
+  background-color: #005566;
+  background-image: linear-gradient(to top, #2a3338, #005566);
   text-align: center;
   display: block;
   max-width: 500px;
@@ -145,7 +157,7 @@ footer {
   color: aliceblue;
 }
 footer a {
-  color: blueviolet;
+  color: #ff00fe;
 }
 footer h3 {
   font-size: 1em;
